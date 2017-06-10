@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tarty Putor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+        body {
+            padding-top:0px;
+            font-family: "Lato", sans-serif;
+            background-image: url('../../Content/image/a.jpg');
+        }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+.nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.navbar-default {
+    background-color: #000000;
+
+}
+
+@@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+	.navbar-default {
+		min-height:30px;
+    }
+
+}
+
+@@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+</style>
+</head>
+<body>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 text-left">
+            </div>
+            <div class="col-sm-8 text-left">
+                <div style="background-color:rgba(255,255,255,.90); border-radius: 5px; padding: 5px 20px 5px 20px; margin-top:30px;">
+                    <h1><img src="../../Content/image/l.jpg" height="40px" width="40px" alt="Library">  Knight's Library <button type="button" class="btn btn-primary pull-right">Check In</button></h1>
+                    <p>Cover: $5<br> Free Calls until 12 (Bacardi, Fireball, Sweet Tea, SoCo, Sailor Jerry, Three Olives)<br> Free Miller & Coors Drafts until 12<br> $3 Loaded Coronas</p>
+                </div>
+                <div style="background-color:rgba(255,255,255,.90); border-radius: 5px; padding: 5px 20px 5px 20px; margin-top:30px;">
+                    <h1><img src="../../Content/image/p.jpg" height="40px" width="40px" alt="Pub">  Knight's Pub <button type="button" class="btn btn-primary pull-right">Check In</button></h1>
+                    <p>Cover: Free for 21+ girls, $5 for guys after 10:30<br> $1 Drafts<br>$2 Drinks & Shots<br>$3 Bottled Beer, Jager & Fireball</p>
+                </div>
+                <div style="background-color:rgba(255,255,255,.90); border-radius: 5px; padding: 5px 20px 5px 20px; margin-top:30px;">
+                    <h1><img src="../../Content/image/s.jpg" height="40px" width="40px" alt="Stag">  Stagger Inn <button type="button" class="btn btn-primary pull-right">Check In</button></h1>
+                    <p>Cover: $5<br>$3 Beer & Drinks</p>
+                </div>
+                <div style="background-color:rgba(255,255,255,.90); border-radius: 5px; padding: 5px 20px 5px 20px; margin-top:30px;">
+                    <h1><img src="../../Content/image/w.jpg" height="40px" width="40px" alt="WOB">  World of Beer <button type="button" class="btn btn-primary pull-right">Check In</button></h1>
+                    <p>Half off select drafts for ladies</p>
+                </div>
+            </div>
+            <div class="col-sm-2 text-left">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+
+</body>
+</html>
